@@ -1,0 +1,41 @@
+version: 2.1
+defaults: &defaults
+  docker:
+    - image: vampio/kmt:circleci-latest
+jobs:
+  signal-brands-update:
+    <<: *defaults
+    steps:
+      - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - "62:c1:24:8f:af:ce:8c:b8:d7:97:72:34:46:b9:44:c2"
+            - "92:ca:b9:9d:2b:a6:14:3e:f5:45:4c:bb:d9:cf:04:ed"
+      - run:
+          name: Flag brands repo to update
+          command: |
+              git clone https://github.com/$CIRCLE_PROJECT_USERNAME/kmt-example-brands.git
+              cd kmt-example-brands
+              
+              echo "true" > update
+            
+              git add .
+              if [ `git status -s | wc -l` -gt 0 ]
+              then
+                git config user.email "${GITHUB_EMAIL}"
+                git config user.name "${CIRCLE_USERNAME}"
+                git commit -m "Service-catalog updated"
+                git pull --rebase && git push origin master
+              else
+                echo "No change were detected. Skipping."
+              fi
+     
+workflows:
+  version: 2
+  signal-catalog-change:
+    jobs:
+      - signal-brands-update:
+          filters:
+            branches:
+              only:
+                - master
