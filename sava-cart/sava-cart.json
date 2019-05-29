@@ -24,16 +24,6 @@
                 }
             ],
             "environment_variables": []
-        },
-        {
-            "tag": "2.1.4",
-            "dependencies": [
-                {
-                    "name": "sava-product",
-                    "version": "^1.x"
-                }
-            ],
-            "environment_variables": []
         }
     ]
 }
