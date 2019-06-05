@@ -4,7 +4,7 @@
     "labels": [
         {
             "app": "<name>",
-            "version": "<tag>",
+            "version": "<tag>"
         }
     ],
     "ports": [
