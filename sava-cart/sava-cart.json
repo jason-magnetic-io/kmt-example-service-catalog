@@ -5,7 +5,6 @@
         {
             "app": "<name>",
             "version": "<tag>",
-            "locale": "<locale>"
         }
     ],
     "ports": [
