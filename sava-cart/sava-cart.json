@@ -19,7 +19,47 @@
             "dependencies": [
                 {
                     "name": "sava-product",
-                    "version": "^2.x"
+                    "version": "1.x"
+                }
+            ],
+            "environment_variables": []
+        },
+        {
+            "tag": "2.0.0",
+            "dependencies": [
+                {
+                    "name": "sava-product",
+                    "version": "2.x"
+                }
+            ],
+            "environment_variables": []
+        },
+        {
+            "tag": "2.0.1",
+            "dependencies": [
+                {
+                    "name": "sava-product",
+                    "version": "2.x"
+                }
+            ],
+            "environment_variables": []
+        },
+        {
+            "tag": "2.0.3",
+            "dependencies": [
+                {
+                    "name": "sava-product",
+                    "version": "2.x"
+                }
+            ],
+            "environment_variables": []
+        },
+        {
+            "tag": "2.0.4",
+            "dependencies": [
+                {
+                    "name": "sava-product",
+                    "version": "2.x"
                 }
             ],
             "environment_variables": []
