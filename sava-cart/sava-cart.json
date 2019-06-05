@@ -19,7 +19,7 @@
             "dependencies": [
                 {
                     "name": "sava-product",
-                    "version": "^1.x"
+                    "version": "^2.x"
                 }
             ],
             "environment_variables": []
