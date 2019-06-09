@@ -62,7 +62,9 @@
                     "version": "2.x"
                 }
             ],
-            "environment_variables": []
+            "environment_variables": [
+				        "BASE"
+            ]
         }
     ]
 }
