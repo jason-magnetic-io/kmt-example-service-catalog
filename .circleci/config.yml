@@ -17,7 +17,7 @@ jobs:
               git clone https://github.com/$CIRCLE_PROJECT_USERNAME/kmt-example-brands.git
               cd kmt-example-brands
               
-              echo "true" > updated
+              date > updated
             
               git add .
               if [ `git status -s | wc -l` -gt 0 ]
