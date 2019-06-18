@@ -1,0 +1,19 @@
+{
+    "name": "sava-ratings",
+    "image": "vampio/sava-ratings",
+    "labels": [
+        {
+            "app": "<name>",
+            "version": "<tag>"
+        }
+    ],
+    "ports": [
+        8080
+    ],
+    "versions": [
+        {
+            "tag": "0.1.0",
+            "dependencies": []
+        }
+    ]
+}
