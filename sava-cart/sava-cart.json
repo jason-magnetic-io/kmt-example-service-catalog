@@ -25,27 +25,17 @@
             "environment_variables": []
         },
         {
+            "tag": "1.0.6",
+            "dependencies": [
+                {
+                    "name": "sava-product",
+                    "version": "1.x"
+                }
+            ],
+            "environment_variables": []
+        },
+        {
             "tag": "2.0.0",
-            "dependencies": [
-                {
-                    "name": "sava-product",
-                    "version": "2.x"
-                }
-            ],
-            "environment_variables": []
-        },
-        {
-            "tag": "2.0.1",
-            "dependencies": [
-                {
-                    "name": "sava-product",
-                    "version": "2.x"
-                }
-            ],
-            "environment_variables": []
-        },
-        {
-            "tag": "2.0.3",
             "dependencies": [
                 {
                     "name": "sava-product",
@@ -63,7 +53,20 @@
                 }
             ],
             "environment_variables": [
-				        "BASE"
+				"BASE_PATH"
+            ]
+        },
+        {
+            "tag": "2.0.5",
+            "dependencies": [
+                {
+                    "name": "sava-product",
+                    "version": "2.x"
+                }
+            ],
+            "environment_variables": [
+                "BASE_PATH",
+                "TITLE"        
             ]
         }
     ]
