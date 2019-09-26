@@ -86,24 +86,6 @@
                 "TITLE",
                 "SHOW_RATINGS"
             ]
-        },
-        {
-            "tag": "2.1.2",
-            "dependencies": [
-                {
-                    "name": "sava-product",
-                    "version": "2.x"
-                },
-                {
-                    "name": "sava-ratings",
-                    "version": "0.x"
-                }
-            ],
-            "environment_variables": [
-                "BASE_PATH",
-                "TITLE",
-                "SHOW_RATINGS"
-            ]
         }
     ]
 }
