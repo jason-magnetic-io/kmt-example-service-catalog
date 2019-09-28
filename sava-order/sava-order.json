@@ -1,0 +1,23 @@
+{
+    "name": "sava-order",
+    "image": "vampio/sava-order",
+    "labels": [
+        {
+            "app": "<name>",
+            "version": "<tag>"
+        }
+    ],
+    "ports": [
+        9090
+    ],
+    "environment_variables": [
+        "ELASTICSEARCH_URL",
+        "ELASTICSEARCH_INDEX"
+    ],
+    "versions": [
+        {
+            "tag": "0.1.1",
+            "dependencies": []
+        }
+    ]
+}
