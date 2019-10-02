@@ -1,0 +1,25 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+## specify here the resource you want to include
+resources:
+- deployment.yaml
+
+## appended to the names of all resources
+nameSuffix: -0.1.1
+
+## labels to add to all resources
+commonLabels:
+  app: sava-stock
+  version: 0.1.1
+
+## image tag
+images:
+- name: sava-order
+  newName: vampio/sava-analytics
+  newTag: 0.1.1
+
+configMapGenerator:
+- name: sava-order-configmap
+  behavior: create
+  env: sava-stock-configMap.env

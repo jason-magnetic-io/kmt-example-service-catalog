@@ -1,0 +1,21 @@
+{
+    "name": "sava-stock",
+    "image": "vampio/sava-analytics",
+    "labels": [
+        {
+            "app": "<name>",
+            "version": "<tag>"
+        }
+    ],
+    "environment_variables": [
+        "ELASTICSEARCH_URL",
+        "ELASTICSEARCH_SEARCH_INDEX_NAME",
+        "ELASTICSEARCH_ANALYTICS_INDEX_NAME"
+    ],
+    "versions": [
+        {
+            "tag": "0.1.1",
+            "dependencies": []
+        }
+    ]
+}
