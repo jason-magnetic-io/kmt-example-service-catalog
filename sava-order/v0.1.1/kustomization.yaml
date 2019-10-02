@@ -22,4 +22,4 @@ images:
 configMapGenerator:
 - name: sava-order-configmap
   behavior: create
-  env: configMap.env
+  env: sava-order-configMap.env

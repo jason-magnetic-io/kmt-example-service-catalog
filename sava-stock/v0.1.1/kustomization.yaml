@@ -20,6 +20,6 @@ images:
   newTag: 0.1.1
 
 configMapGenerator:
-- name: sava-order-configmap
+- name: sava-stock-configmap
   behavior: create
   env: sava-stock-configMap.env
