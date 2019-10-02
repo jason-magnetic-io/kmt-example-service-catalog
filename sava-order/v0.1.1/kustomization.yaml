@@ -15,8 +15,7 @@ commonLabels:
 
 ## image tag
 images:
-- name: sava-order
-  newName: vampio/sava-order
+- name: vampio/sava-order
   newTag: 0.1.1
 
 configMapGenerator:
