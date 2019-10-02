@@ -13,8 +13,10 @@ commonLabels:
 configMapGenerator:
 - behavior: create
   env: configMap.env
-  name: sava-cart-configmap
+  env: sava-cart-configMap.env
+
 images:
 - name: vampio/sava-cart
   newTag: 2.1.2
+
 nameSuffix: -2.1.2

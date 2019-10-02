@@ -21,4 +21,4 @@ images:
 configMapGenerator:
 - behavior: create
   env: configMap.env
-  name: sava-cart-configmap
+  env: sava-cart-configMap.env
