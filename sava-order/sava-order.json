@@ -12,7 +12,7 @@
     ],
     "environment_variables": [
         "ELASTICSEARCH_URL",
-        "ELASTICSEARCH_INDEX"
+        "ELASTICSEARCH_INDEX_NAME"
     ],
     "versions": [
         {
