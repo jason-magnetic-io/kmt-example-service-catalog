@@ -5,9 +5,13 @@ kind: Kustomization
 resources:
 - deployment.yaml
 
+## appended to the names of all resources
+nameSuffix: -0.1.1
+
 ## labels to add to all resources
 commonLabels:
   app: sava-order
+  version: 0.1.1
 
 ## image tag
 images:
